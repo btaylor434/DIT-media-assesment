@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>Haunted House</title>
+    <title>Roose store</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
 
 </head>
@@ -10,16 +10,56 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="shop.html">shop</a></li>
                 <li><a href="about.html">about</a></li>
-            </ul>
-            <a href="index.html"><img src="logo.png" alt="simple logo" id="logo" ></a>
-            <ul>
                 <li><a href="signup.html">signup</a></li>
-                <li><a href="cart.html">cart</a></li>
+                <li onclick=showCartsidebar()><a href="#">cart</a></li>
             </ul>
+            <ul>
+                <li class="hideOnMobile"><a href="shop.html">shop</a></li>
+                <li class="hideOnMobile"><a href="about.html">about</a></li>
+            </ul>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Roose logo"></a>
+            </div>
+            <ul>
+                <li class="hideOnMobile"><a href="signup.html">signup</a></li>
+                <li class="hideOnMobile" onclick=showCartsidebar()><a href="#">cart</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+
+            <ul class="cartsidebar">
+                <li onclick=hideCartsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><p>Your cart is empty</p></li>
+                <li class="continue"><a href="#">continue shopping</a></li>
+            </ul>
+            
         </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+
+            function showCartsidebar(){
+                const cartsidebar = document.querySelector('.cartsidebar')
+                cartsidebar.style.display = 'flex'
+
+            }
+            function hideCartsidebar(){
+                const cartsidebar = document.querySelector('.cartsidebar')
+                cartsidebar.style.display = 'none'
+                
+            }
+        </script>
+
     </header>
 </body>
 

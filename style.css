@@ -11,9 +11,10 @@ nav {
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
+    background: rgba(51, 10, 98, 0.2);
 }
 
-nav a {
+nav ul li a {
     height: 100%;
     text-decoration: none;
     display: flex;
@@ -23,12 +24,22 @@ nav a {
     border-color: aliceblue;
 }
 
-nav a:hover {
+nav ul li a:hover {
     background-color: rgb(113, 42, 185);
 }
 
-#logo {
-    max-height: 30px;
+.logo { 
+    height: 40px;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    padding: 0 30px;
 }
 
 .nav li {
@@ -42,7 +53,6 @@ nav a:hover {
     align-items: center;
 }
 
-
 ul {
     display: flex;
     justify-content: center;
@@ -51,8 +61,97 @@ ul {
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(rgba(38, 0, 82, 0.7), rgba(95, 35, 192, 0.3)), url(exploration.jpg);
+    background-image: linear-gradient(rgba(10, 0, 82, 0.7), rgba(66, 35, 192, 0.3)), url(exploration.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(119, 83, 161, 0.2);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+
+.sidebar a{
+    width: 100%;
+}
+
+
+.menu-button{
+    display: none;
+}
+
+.cartsidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.cartsidebar li{
+    width: 100%;
+}
+
+.continue a{
+    text-decoration: none;
+    color: rgb(1, 7, 36);
+    display: flex;
+    padding: 5px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cartsidebar p{
+    color: rgb(1, 7, 36);
+    text-align: center;
+    margin: 50px;
+    font-weight: 700;
+    font-size: large;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .logo{
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .cartsidebar{
+        width: 100%
+    }
 }
