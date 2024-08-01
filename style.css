@@ -175,7 +175,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .quote h2{
@@ -186,10 +186,23 @@ header{
 
 
 .container {
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     margin: 0 auto;
     background-color: rgb(245, 245, 245);
+}
+
+.headercontainer {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0 auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
 @media(max-width: 800px){
