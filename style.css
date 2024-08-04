@@ -11,14 +11,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background: rgba(35, 56, 191);
+    background: rgba(35, 56, 191, 0.7);
 }
 
 nav ul li a {
     height: 100%;
     text-decoration: none;
     display: flex;
-    color: rgb(249, 246, 255);
+    color: aliceblue;
     padding: 7px 30px;
     border: 2px solid transparent;
     border-color: aliceblue;
@@ -74,13 +74,13 @@ header{
 }
 
 #index_title{
-    background-image: linear-gradient(rgba(35, 56, 191, 0.3), rgba(52, 125, 215, 0.3)), url(exploration.jpg);
+    background-image: linear-gradient(rgba(35, 56, 191, 0.3), rgba(52, 125, 215, 0.3)), url(indexphoto.png);
     min-height: 100vh;
 }
 
 #shop_title{
-    min-height: 70vh;
-    background-image: url(waves.png);
+    background-image: linear-gradient(rgba(35, 56, 191, 0.3), rgba(52, 125, 215, 0.3)), url(trainimg.png);
+    min-height: 69vh;
 }
 
 
@@ -97,6 +97,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    border-bottom-left-radius: 25px;
 }
 
 .sidebar li{
@@ -118,13 +119,14 @@ header{
     top: 0;
     right: 0;
     height: 100vh;
-    width: 400px;
+    width: 350px;
     z-index: 999;
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 50px;
+    border-radius: 25px;
 }
 
 .cartsidebar li{
@@ -134,12 +136,12 @@ header{
 .cartsidebar a {
     border-bottom: 2px solid transparent;
     border-top: 2px solid transparent;
-    border-color: rgba(51, 10, 98)
-
+    border-color: rgba(35, 56, 191);
+    border-radius: 25px;
 }
 
 .cartsidebar p{
-    color: rgb(1, 7, 36);
+    color: rgba(35, 56, 191);
     text-align: center;
     font-weight: 700;
     font-size: large;
@@ -147,15 +149,23 @@ header{
 
 .continue a{
     text-decoration: none;
-    color: rgb(1, 7, 36);
+    color: rgba(35, 56, 191);
     display: flex;
     padding: 5px;
     border-radius: 30px;
-    border-color: rgba(51, 10, 98);
+    border-color: rgba(35, 56, 191);
     margin: 10px;
     justify-content: center;
     flex-direction: column;
 }
+
+.continue a:hover{
+    transition: 0.3s;
+    background-color: rgba(35, 56, 191);
+    color: aliceblue;
+}
+
+
 
 .hero {
     height: 100vh;
@@ -189,7 +199,7 @@ header{
     justify-content: space-evenly;
     display: flex;
     margin: 0 auto;
-    background-color: rgb(245, 245, 245);
+    background-color: aliceblue;
 }
 
 .headercontainer {
@@ -203,6 +213,11 @@ header{
     justify-content: center;
     align-items: center;
     margin: 20px;
+    width: 40%;
+}
+
+.cell img{
+    width: 100%;
 }
 
 @media(max-width: 800px){
@@ -243,7 +258,7 @@ body{
     border-bottom-right-radius: 20px;
 }
 
-.product_img{
+.product img{
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
