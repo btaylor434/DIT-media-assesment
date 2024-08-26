@@ -6,22 +6,32 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: kemio;
+    src: url("Kemio-ExtraExpanded.otf") format("opentype");
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: rgba(35, 56, 191, 0.7);
+    background-color: rgba(83, 92, 161, 0.2);
+    backdrop-filter: blur(10px);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav ul li a {
     height: 100%;
     text-decoration: none;
     display: flex;
-    color: aliceblue;
+    color: rgba(35, 56, 191);
     padding: 7px 30px;
     border: 2px solid transparent;
-    border-color: aliceblue;
+    border-color: rgba(35, 56, 191);
+    border-radius: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
 }
 
 nav ul li a:hover {
@@ -29,18 +39,14 @@ nav ul li a:hover {
     background-color: rgb(72, 107, 225);
 }
 
-.logo { 
-    height: 40px;
-    max-height: 50px;
-    display: flex;
-    align-items: center;
-}
-
 .logo a {
-    height: 100%;
+    color: aliceblue;
+    font-family: kemio;
+    font-size: 50px;
     text-decoration: none;
+    align-items: center;
     display: flex;
-    padding: 0 30px;
+    margin: 0;
 }
 
 .nav li {
@@ -67,19 +73,44 @@ header{
 }
 
 .bar{
-    background: rgba(35, 56, 191, 0.9);
     padding: 10px;
     border: 2px solid transparent;
     border-color: aliceblue;
+    background-color: rgba(83, 92, 161, 0.2);
+    backdrop-filter: blur(3px);
+    display: flex;
+    overflow: hidden;
+    align-items: center;
 }
 
+.scroll {
+    white-space: nowrap;
+    display: flex;
+    margin: 0 2em;
+}
+
+.fromright {
+    animation: fromright 10s infinite linear;
+}
+
+@keyframes fromright {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
 #index_title{
-    background-image: linear-gradient(rgba(35, 56, 191, 0.3), rgba(52, 125, 215, 0.3)), url(indexphoto.png);
+    background-image: url(heroimage.jpg);
     min-height: 100vh;
+    background-attachment: fixed;
 }
 
 #shop_title{
-    background-image: linear-gradient(rgba(35, 56, 191, 0.3), rgba(52, 125, 215, 0.3)), url(trainimg.png);
+    background-image: url(heroimage.jpg);
     min-height: 69vh;
 }
 
@@ -121,12 +152,12 @@ header{
     height: 100vh;
     width: 350px;
     z-index: 999;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 50px;
-    border-radius: 25px;
+    border-radius: 23.5px;
 }
 
 .cartsidebar li{
@@ -134,10 +165,13 @@ header{
 }
 
 .cartsidebar a {
-    border-bottom: 2px solid transparent;
-    border-top: 2px solid transparent;
-    border-color: rgba(35, 56, 191);
     border-radius: 25px;
+}
+
+.cartsidebar a:hover{
+    transition: 0.3s;
+    background-color: rgba(35, 56, 191);
+    color: aliceblue;
 }
 
 .cartsidebar p{
@@ -165,20 +199,6 @@ header{
     color: aliceblue;
 }
 
-
-
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
-}
-
 .quote {
     height: 50vh;
     display: flex;
@@ -188,8 +208,16 @@ header{
     margin-bottom: 20px;
 }
 
+.quote h4{
+    font-size: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .quote h2{
-    color: rgba(35, 56, 191);
+    color: aliceblue;
     font-size: 50px;
     font-weight: 200;
 }
@@ -198,14 +226,37 @@ header{
 .container {
     justify-content: space-evenly;
     display: flex;
-    margin: 0 auto;
+    margin: 0;
     background-color: aliceblue;
+}
+
+#sewingimg {
+    background-image: url(sewinghor.png);
+}
+
+.titlecontainer {
+    justify-content: space-evenly;
+    display: flex;
+    height: 90vh;
+    margin: 0 auto;
 }
 
 .headercontainer {
     justify-content: space-evenly;
     display: flex;
+    align-items: center;
+    height: 100vh;
     margin: 0 auto;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: kemio;
+    color: rgba(35, 56, 191);
+}
+
+h2 {
+    font-family: kemio;
 }
 
 .cell {
@@ -214,6 +265,15 @@ header{
     align-items: center;
     margin: 20px;
     width: 40%;
+}
+
+.cell h2{
+    font-size: 70px;
+    color: rgb(219, 232, 242);
+}
+
+.cell p{
+    text-align: left;
 }
 
 .cell img{
@@ -243,25 +303,28 @@ header{
 
 body{
     width: 100%;
+    background-color: aliceblue;
 }
+
+/*shop page*/
 
 .main_container{
     display: grid;
-    padding: 40px;
-    grid-template-columns: auto auto auto auto;
-    gap: 40px;
+    padding: 110px;
+    grid-template-columns: auto auto auto;
+    gap: 110px;
+    border-radius: 25px;
+    border: 3px solid transparent;
+    border-color: #2338bf;
 }
 
 .product{
-    box-shadow: 0px 7px 7px rgba(4, 1, 23, 0.1);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
 }
 
 .product img{
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-radius: 20px;
 }
 
 .product_desc{
@@ -270,18 +333,25 @@ body{
 }
 
 .product_desc h3{
-    font-size: 24px;
+    font-size: 23px;
     margin: 10px 0;
 }
 
 .product a{
     text-decoration: none;
-    background-color: rgba(35, 56, 191, 0.9);
-    color: aliceblue;
+    color: black;
     display: inline-block;
     width: 100%;
-    border-radius: 25px;
     padding: 3px;
+    border-radius: 10px;
+}
+
+/*product page*/
+
+.product_container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
 /*css for footer*/
