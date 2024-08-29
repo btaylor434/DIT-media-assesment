@@ -11,6 +11,8 @@
     src: url("Kemio-ExtraExpanded.otf") format("opentype");
 }
 
+/*cart side bar*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -75,7 +77,7 @@ header{
     background-position: center;
 }
 
-/*cart*/
+/*cart side bar*/
 
 .cartsidebar {
     position: fixed;
@@ -131,6 +133,26 @@ header{
     font-size: large;
 }
 
+.continue a{
+    text-decoration: none;
+    color: rgba(35, 56, 191);
+    display: flex;
+    padding: 5px;
+    border-radius: 30px;
+    border-color: rgba(35, 56, 191);
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.continue a:hover{
+    transition: 0.3s;
+    background-color: rgba(35, 56, 191);
+    color: aliceblue;
+}
+
+/*cart functions*/
+
 .remove_button {
     background-color: #2338bf;
     color: aliceblue;
@@ -153,25 +175,6 @@ header{
 }
 
 
-.continue a{
-    text-decoration: none;
-    color: rgba(35, 56, 191);
-    display: flex;
-    padding: 5px;
-    border-radius: 30px;
-    border-color: rgba(35, 56, 191);
-    margin: 10px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.continue a:hover{
-    transition: 0.3s;
-    background-color: rgba(35, 56, 191);
-    color: aliceblue;
-}
-
-
 /*bar and scroll*/
 
 .bar{
@@ -184,6 +187,7 @@ header{
     white-space: nowrap;
     overflow: hidden;
     align-items: center;
+    font-weight: bold;
 }
 
 .scroll {
@@ -196,7 +200,6 @@ header{
 .scrolltext {
     display: inline-block;
 }
-
 
 @keyframes slide {
     from {
@@ -251,7 +254,7 @@ header{
     border-style: solid none none none;
 }
 
-/*colapse sidebar*/
+/*collapse sidebar*/
 
 .sidebar {
     position: fixed;
@@ -296,7 +299,7 @@ header{
     display: none;
 }
 
-/*section headers and containers*/
+/*Quote text and h*/
 
 .quote {
     height: 50vh;
@@ -329,16 +332,16 @@ header{
     margin-bottom: 20px;
 }
 
-
-.container {
-    margin: 0;
-    background-color: aliceblue;
-    height: 43vh;
+h4 {
+    font-family: kemio;
+    color: rgba(35, 56, 191);
 }
 
-#sewingimg {
-    background-color: #bbc5f3;
+h2 {
+    font-family: kemio;
 }
+
+/*header and title containers*/
 
 .titlecontainer {
     justify-content: space-evenly;
@@ -366,23 +369,14 @@ header{
     flex-direction: column;
 }
 
-h4 {
-    font-family: kemio;
-    color: rgba(35, 56, 191);
-}
-
-h2 {
-    font-family: kemio;
-}
+/*cells*/
 
 .cell {
-    margin-top: 50px;
-    flex: 1 1 300px;
-    max-width: 500px;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    width: 40%;
 }
 
 .cell h2{
@@ -401,30 +395,16 @@ h2 {
     border-radius: 20px;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
-    .logo{
-        justify-content: flex-start;
-    }
-}
+/*body*/
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
-    .cartsidebar{
-        width: 100%
-    }
-}
 
 body{
     width: 100%;
     background-color: white;
+}
+
+body, html {
+    overflow-x: hidden;
 }
 
 /*shop page*/
@@ -438,13 +418,6 @@ body{
     border-color: #2338bf;
 }
 
-@media(max-width: 800px) {
-    .main_container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
 .product{
     border-radius: 20px;
 }
@@ -453,6 +426,8 @@ body{
     width: 100%;
     border-radius: 20px;
 }
+
+/*product hover images*/
 
 #bluepants:hover img {
     content: url("Denim_Pants_Back.jpg");
@@ -498,6 +473,8 @@ body{
     content: url("Blueshirtback.jpg");
     opacity: 0.9;
 }
+
+/*product description*/
 
 .product_desc{
     text-align: center;
@@ -627,6 +604,12 @@ body{
 
 /*css for footer*/
 
+.container {
+    margin: 0;
+    background-color: aliceblue;
+    height: 43vh;
+}
+
 footer {
     background-color: rgba(35, 56, 191);
     width: 100%;
@@ -693,7 +676,29 @@ footer {
     color: aliceblue;
 }
 
+/*media queries*/
+
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+    .cartsidebar{
+        width: 100%
+    }
+}
+
+
 @media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .logo{
+        justify-content: flex-start;
+    }
     .footernav ul{
         flex-direction: column;
     }
@@ -701,5 +706,9 @@ footer {
         width: 100%;
         text-align: center;
         margin: 10px;
+    }
+    .main_container {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
