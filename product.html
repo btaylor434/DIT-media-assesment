@@ -5,14 +5,14 @@
     <title>Rook shop</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!--Nav bar including all popup functions from the nav and links to other pages-->
 
     <header>
-        <nav>
+        <nav id="colornav">
             <ul class="sidebar">
                 <div class="exitbutton"><li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2338bf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li></div>
                 <li><a href="shop.html">shop</a></li>
@@ -35,13 +35,16 @@
 
             <ul class="cartsidebar">
                 <li onclick=hideCartsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2338bf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><p>Your cart is empty</p></li>
+                <div class="cart_items">
+
+                </div>
                 <li class="continue" onclick=hideCartsidebar()><a href="#">continue shopping</a></li>
             </ul>
             
         </nav>
+
         
-        <div class="bar">
+        <div class="bar" id="colornav">
             <div class="scroll">
                 <div class="scrolltext"></div>
             </div>
@@ -56,18 +59,65 @@
 
     <div class="product_container">
         <div class="cell">
-            <img src="black_shirt.png" alt="black shirt image">
+            <img src="Whiteshirtfront.jpg" alt="white shirt">
         </div>
         <div class="cell">
             <div class="product_details">
-                <h3>Black shirt</h3>
-                <p>Size</p>
+                <h3>ROOK Shirt</h3>
                 <p>$45</p>
-                <p>add to cart</p>
-    
+                <p>colour:</p>
+                <ul class="productcolour">
+                    <li><a>White</a></li>
+                    <li><a>Black</a></li>
+                    <li><a>Blue</a></li>
+                    <li><a>Red</a></li>
+                    <li><a>Yellow</a></li>
+                    <li><a>Purple</a></li>
+                </ul>
+                <p>size:</p>
+                <ul class="productsize">
+                    <li><a>XS</a></li>
+                    <li><a>S</a></li>
+                    <li><a>M</a></li>
+                    <li><a>L</a></li>
+                    <li><a>XL</a></li>
+                </ul>
+                <button onclick="addToCart('ROOK shirt', 45, 'Whiteshirtfront.jpg'); return false;">Add To Cart</button>
+                <p>A classic cotton t-shirt, soft and breathable, features a comfortable fit with short sleeves and a crew neckline. Its versatile design makes it perfect for everyday wear, easily paired with jeans, shorts, or skirts for a casual look.</p>
             </div>
         </div>
 
     </div>
+
+    <div class="container">
+        <div class="quote">
+            <h4>ROOK</h4>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footernav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Shipping & Returns</a></li>
+                <li><a href="">Stocklist</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footerbottom">
+            <p>Copyright &copy; Roose; 2024</p>
+    </div>
+
+</body>
 
 </body>

@@ -16,7 +16,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(83, 92, 161, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     padding-left: 20px;
     padding-right: 20px;
     z-index: 1000;
@@ -27,12 +27,13 @@ nav ul li a {
     height: 100%;
     text-decoration: none;
     display: flex;
-    color: rgba(35, 56, 191);
+    color: aliceblue;
     padding: 7px 30px;
     border: 2px solid transparent;
-    border-color: rgba(35, 56, 191);
+    border-color: aliceblue;
     border-radius: 20px;
     margin-right: 3px;
+    font-weight: bold;
     margin-left: 3px;
 }
 
@@ -93,20 +94,64 @@ header{
     border-radius: 23.5px;
 }
 
-.cartsidebar li{
-    width: 100%;
+.cart_items {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid;
+    border-color: rgba(35, 56, 191, 0.2);
+    justify-content: space-between;
+}
+
+.cart_item_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
 }
 
 .cartsidebar a {
+    color: #2338bf;
     border-radius: 25px;
+    border-color: #2338bf;
 }
 
 .cartsidebar p{
+    margin-top: 20px;
     color: rgba(35, 56, 191);
     text-align: center;
     font-weight: 700;
     font-size: large;
 }
+
+.remove_button {
+    background-color: #2338bf;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.remove_button:hover {
+    background-color: #bbc5f3;
+    transition: 0.1s;
+}
+
+.remove_button:active{
+    transition: 0.3s;
+    color: rgba(35, 56, 191);
+    border-color: rgba(35, 56, 191);
+    background-color: aliceblue;
+}
+
 
 .continue a{
     text-decoration: none;
@@ -135,7 +180,7 @@ header{
     border: 2px solid transparent;
     border-color: rgba(35, 56, 191);
     background-color: rgba(83, 92, 161, 0.2);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
     white-space: nowrap;
     overflow: hidden;
     align-items: center;
@@ -165,15 +210,45 @@ header{
 /*header images*/
 
 #index_title{
-    background-image: url(heroimage.jpg);
+    background-image: linear-gradient(rgb(156, 176, 239, 0.1), rgb(156, 176, 239, 0.1)), url(1millidollars-K5P_P5zt2bI-unsplash.jpg);
     min-height: 100vh;
     background-attachment: fixed;
 }
 
 #shop_title{
-    background-image: url(heroimage.jpg);
+    background-image: linear-gradient(rgb(156, 176, 239, 0.1), rgb(156, 176, 239, 0.1)), url(1millidollars-K5P_P5zt2bI-unsplash.jpg);
     background-attachment: fixed;
     min-height: 70vh;
+}
+
+#jeansheader {
+    background-image: linear-gradient(rgb(156, 176, 239, 0.1), rgb(156, 176, 239, 0.1)), url(bryan-papazov-E2MMYUsCDSU-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#shirtsheader {
+    background-image: linear-gradient(rgb(156, 176, 239, 0.1), rgb(156, 176, 239, 0.1)), url(clem-onojeghuo-B-9xNhh9rmg-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#aboutheader {
+    background-image: linear-gradient(rgb(156, 176, 239, 0.1), rgb(156, 176, 239, 0.1)), url(aisvri-bfF-9S0ktP8-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#aboutimg {
+    background-image: url(marie-michele-bouchard-OBrZs_Ed9iE-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#colornav {
+    background-color: #2338bf;
+    border-color: aliceblue;
+    border-style: solid none none none;
 }
 
 /*colapse sidebar*/
@@ -186,8 +261,9 @@ header{
     z-index: 1500;
     display: none;
     flex-direction: column;
-    padding-bottom: 50vh;
+    padding-bottom: 30vh;
     background-color: aliceblue;
+    box-shadow: rgba(35, 56, 191, 0.4) 0px 18px 50px -10px;
 }
 
 .sidebar li{
@@ -195,6 +271,7 @@ header{
 }
 
 .sidebar a{
+    color: #2338bf;
     width: 100%;
     border-radius: 0;
     font-size: 26px;
@@ -219,6 +296,8 @@ header{
     display: none;
 }
 
+/*section headers and containers*/
+
 .quote {
     height: 50vh;
     display: flex;
@@ -227,11 +306,20 @@ header{
     align-items: center;
 }
 
-/*section headers and containers*/
+.quote a {
+    color: aliceblue;
+    font-weight: bold;
+}
 
 .quote h4{
     font-size: 60vh;
     align-items: center;
+}
+
+.quote h3 {
+    font-family: kemio;
+    color:#000000;
+    font-size: 50px;
 }
 
 .quote h2{
@@ -270,7 +358,7 @@ header{
 
 .headercontainer {
     border-bottom: #2338bf;
-    justify-content: space-evenly;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     height: 100vh;
@@ -288,17 +376,20 @@ h2 {
 }
 
 .cell {
+    margin-top: 50px;
+    flex: 1 1 300px;
+    max-width: 500px;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    width: 40%;
 }
 
 .cell h2{
     font-size: 70px;
-    color: rgb(219, 232, 242);
+    color: #2338bf;
 }
+
 
 .cell p{
     text-align: left;
@@ -306,6 +397,8 @@ h2 {
 
 .cell img{
     width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 @media(max-width: 800px){
@@ -331,7 +424,7 @@ h2 {
 
 body{
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 /*shop page*/
@@ -341,9 +434,15 @@ body{
     padding: 90px;
     grid-template-columns: auto auto auto;
     gap: 110px;
-    border-radius: 10px;
     border: 3px solid transparent;
     border-color: #2338bf;
+}
+
+@media(max-width: 800px) {
+    .main_container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .product{
@@ -353,7 +452,6 @@ body{
 .product img{
     width: 100%;
     border-radius: 20px;
-    transition: opacity 0.1s ease-in-out;
 }
 
 #bluepants:hover img {
@@ -371,6 +469,35 @@ body{
     opacity: 0.9;
 }
 
+#whiteshirt:hover img{
+    content: url("Whiteshirtback.jpg");
+    opacity: 0.9;
+}
+
+#blackshirt:hover img{
+    content: url("blackshirtback.jpg");
+    opacity: 0.9;
+}
+
+#redshirt:hover img{
+    content: url("redshirtback.jpg");
+    opacity: 0.9;
+}
+
+#yellowshirt:hover img{
+    content: url("yellowshirtback.jpg");
+    opacity: 0.9;
+}
+
+#purpleshirt:hover img{
+    content: url("Purpleshirtback.jpg");
+    opacity: 0.9;
+}
+
+#blueshirt:hover img{
+    content: url("Blueshirtback.jpg");
+    opacity: 0.9;
+}
 
 .product_desc{
     text-align: center;
@@ -395,11 +522,108 @@ body{
 
 .product_container {
     height: 100vh;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: flex-start;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
+
+.product_container a {
+    text-decoration: none;
+    display: flex;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgba(35, 56, 191);
+    color: aliceblue;
+    border: 2px solid;
+    margin: 20px 0;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product_container a:hover{
+    transition: 0.3s;
+    color: rgba(35, 56, 191);
+}
+
+.product_container button {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: rgba(35, 56, 191);
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.product_container button:hover {
+    transition: 0.3s;
+    background-color: rgb(54, 77, 225);
+}
+
+.product_container button:active{
+    transition: 0.1s;
+    border-color: rgba(35, 56, 191);
+}
+
+.product_container h3 {
+    font-family: kemio;
+    font-size: 50px;
+    text-align: left;
+    margin: 0 0 20px;
+}
+
+.productsize {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.productsize li {
+    margin-right: 10px;
+}
+
+.productsize a {
+    display: flex;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 2px solid;
+    color: black;
+}
+
+.productcolour {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productcolour a {
+    display: flex;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 0 0 20px;
+    background-color: transparent;
+    border: 2px solid;
+    color: black;
+}
+
+.product_details p {
+    margin: 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product_details {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
 
 /*css for footer*/
 

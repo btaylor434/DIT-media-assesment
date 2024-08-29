@@ -5,7 +5,7 @@
     <title>Rook shop</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,9 @@
 
             <ul class="cartsidebar">
                 <li onclick=hideCartsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2338bf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><p>Your cart is empty</p></li>
+                <div class="cart_items">
+
+                </div>
                 <li class="continue" onclick=hideCartsidebar()><a href="#">continue shopping</a></li>
             </ul>
             
@@ -113,32 +115,6 @@
             </div>
         </div>
         
-
-        <!--scripts for nav bar-->
-
-        <script>
-            function showSidebar(){
-                const sidebar = document.querySelector('.sidebar')
-                sidebar.style.display = 'flex'
-            }
-            function hideSidebar(){
-                const sidebar = document.querySelector('.sidebar')
-                sidebar.style.display = 'none'
-            }
-
-            function showCartsidebar(){
-                const cartsidebar = document.querySelector('.cartsidebar')
-                cartsidebar.style.display = 'flex'
-
-            }
-            function hideCartsidebar(){
-                const cartsidebar = document.querySelector('.cartsidebar')
-                cartsidebar.style.display = 'none'
-                
-            }
-
-        </script>
-
 
         <div class="titlecontainer">
             <div class="quote">
@@ -222,88 +198,89 @@
 
     <!--main content-->
 
-    <div class="headercontainer" id="sewingimg">
+    <div class="headercontainer" id="jeansheader">
+        <p></p>
         <div class="quote">
             <h2>JEANS</h2>
         </div>
+        <div class="bar">
+            <div class="scroll">
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+            </div>
+            <div class="scroll">
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+            </div>
+        </div>
     </div>
 
-    <div class="bar">
-        <div class="scroll">
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-        </div>
-        <div class="scroll">
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-            <div class="scrolltext">Jeans</div>
-        </div>
-    </div>
 
     <div class="main_container">
         <div class="product" id="bluepants">
-            <img src="Denim_Pants_Front.jpg" data-hover="Denim_Pants_Back" alt="light blue jeans image">
+            <img src="Denim_Pants_Front.jpg" alt="light blue jeans image">
             <div class="product_desc">
-                <a href="product.html">
+                <a href="bluejeansproduct.html">
                     <h3>Light Blue Denim</h3>
                     <p>$75.00</p>
                 </a>
@@ -311,18 +288,18 @@
             
         </div>
         <div class="product" id="brownpants">
-            <img src="Denim_Pants_Brown_Front.jpg" data-hover="Denim_Pants_Brown_Data" alt="brown jeans image">
+            <img src="Denim_Pants_Brown_Front.jpg" alt="brown jeans image">
             <div class="product_desc">
-                <a href="product.html">
+                <a href="brownjeansproduct.html">
                     <h3>Brown Denim</h3>
                     <p>$75.00</p>
                 </a>
             </div>
         </div>
         <div class="product" id="darkbluepants">
-            <img src="Denim_Pants_Dark_Blue_Front.jpg" data-hover="Denim_Pants_Dark_Blue_Back" alt="dark blue jeans image">
+            <img src="Denim_Pants_Dark_Blue_Front.jpg" alt="dark blue jeans image">
             <div class="product_desc">
-                <a href="product.html">
+                <a href="darkjeansproduct.html">
                     <h3>Dark Blue Jeans</h3>
                     <p>$75.00</p>
                 </a>
@@ -331,260 +308,122 @@
     </div>
 
 
-    <div class="bar">
-        <div class="scroll">
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-        </div>
-        <div class="scroll">
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-        </div>
-    </div>
-
-    <div class="headercontainer" id="sewingimg">
+    <div class="headercontainer" id="shirtsheader">
+        <p></p>
         <div class="quote">
             <h2>SHIRTS</h2>
         </div>
+        <div class="bar">
+            <div class="scroll">
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+            </div>
+            <div class="scroll">
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+                <div class="scrolltext">Jeans</div>
+            </div>
+        </div>
     </div>
 
-    <div class="bar">
-        <div class="scroll">
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-        </div>
-        <div class="scroll">
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-            <div class="scrolltext">Shirts</div>
-        </div>
-    </div>
 
     <div class="main_container">
-        <div class="product">
-            <img src="black_shirt.png" alt="product image">
+        <div class="product" id="whiteshirt">
+            <img src="Whiteshirtfront.jpg" alt="white shirt">
             <div class="product_desc">
                 <a href="product.html">
-                    <h3>BLACK TEE</h3>
+                    <h3>White ROOK shirt</h3>
                     <p>$45.00</p>
                 </a>
             </div>
             
         </div>
-        <div class="product">
-            <img src="black_shirt.png" alt="product image">
+        <div class="product" id="blackshirt">
+            <img src="Blackshirtfront.jpg" alt="black shirt">
             <div class="product_desc">
                 <a href="product.html">
-                    <h3>BLACK TEE</h3>
+                    <h3>Black ROOK shirt</h3>
                     <p>$45.00</p>
                 </a>
             </div>
         </div>
-        <div class="product">
-            <img src="black_shirt.png" alt="product image">
+        <div class="product" id="redshirt">
+            <img src="Redshirtfront.jpg" alt="red shirt">
             <div class="product_desc">
                 <a href="product.html">
-                    <h3>BLACK TEE</h3>
+                    <h3>Red ROOK shirt</h3>
                     <p>$45.00</p>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="bar">
-        <div class="scroll">
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-        </div>
-        <div class="scroll">
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-            <div class="scrolltext">rook</div>
-        </div>
-    </div>
 
-    <div class="headercontainer" id="sewingimg">
+    <div class="headercontainer" id="aboutheader">
+        <p></p>
         <div class="quote">
             <h2>Learn <a href="about.html">About</a> Us</h2>
         </div>
+        <p></p>
     </div>
 
     <div class="container">
