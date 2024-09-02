@@ -14,21 +14,21 @@
         <nav>
             <ul class="sidebar">
                 <div class="exitbutton"><li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#2338bf"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li></div>
-                <li><a href="shop.html">shop</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="signup.html">signup</a></li>
-                <li onclick=showCartsidebar()><a href="#">cart</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li onclick=showCartsidebar()><a href="#">Cart</a></li>
             </ul>
             <ul>
-                <li class="hideOnMobile"><a href="shop.html">shop</a></li>
-                <li class="hideOnMobile"><a href="about.html">about</a></li>
+                <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
             </ul>
             <div class="logo">
                 <a href="index.html">ROOK</a>
             </div>
             <ul>
-                <li class="hideOnMobile"><a href="#">signup</a></li>
-                <li class="hideOnMobile" onclick=showCartsidebar()><a href="#">cart</a></li>
+                <li class="hideOnMobile"><a href="#">Signup</a></li>
+                <li class="hideOnMobile" onclick=showCartsidebar()><a href="#">Cart</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
 
@@ -37,7 +37,7 @@
                 <div class="cart_items">
 
                 </div>
-                <li class="continue" onclick=hideCartsidebar()><a href="#">continue shopping</a></li>
+                <li class="continue" onclick=hideCartsidebar()><a href="#">Continue Shopping</a></li>
             </ul>
             
         </nav>
@@ -57,7 +57,7 @@
     <!--product display-->
 
     <div class="product_container">
-        <div class="cell">
+        <div class="cell" id="bluepants">
             <img src="Denim_Pants_Front.jpg" alt="black shirt image">
         </div>
         <div class="cell">
@@ -66,19 +66,18 @@
                 <p>$75</p>
                 <p>Size:</p>
                 <ul class="productsize">
-                    <li><a>28</a></li>
-                    <li><a>30</a></li>
-                    <li><a>32</a></li>
-                    <li><a>34</a></li>
-                    <li><a>36</a></li>
-                    <li><a>38</a></li>
-                    <li><a>40</a></li>
+                    <li><a>28/6</a></li>
+                    <li><a>30/10</a></li>
+                    <li><a>32/14</a></li>
+                    <li><a>34/18</a></li>
+                    <li><a>36/20</a></li>
+                    <li><a>38/22</a></li>
+                    <li><a>40/24</a></li>
                 </ul>
                 <button onclick="addToCart('Light Blue Jeans', 75, 'Denim_Pants_Front.jpg'); return false;">Add To Cart</button>
                 <p>Light blue cotton jeans are classic, comfortable, and versatile. Made from durable cotton, they feature a soft light blue hue, straight-leg fit, and traditional five-pocket design. Perfect for casual wear, they pair well with various tops and shoes.</p>
             </div>
         </div>
-
     </div>
 
     <!--footer-->

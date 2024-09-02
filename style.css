@@ -353,11 +353,16 @@ h2 {
 .titlecontainer a{
     text-decoration: none;
     display: flex;
-    color: rgba(35, 56, 191);
+    color: aliceblue;
     font-size: 26px;
     margin-right: 3px;
     margin-left: 3px;
 }
+
+.titlecontainer a:hover {
+    color: #bbc5f3;
+}
+
 
 .headercontainer {
     border-bottom: #2338bf;
@@ -431,47 +436,38 @@ body, html {
 
 #bluepants:hover img {
     content: url("Denim_Pants_Back.jpg");
-    opacity: 0.9;
 }
 
 #brownpants:hover img {
     content: url("Denim_Pants_Brown_Back.jpg");
-    opacity: 0.9;
 }
 
 #darkbluepants:hover img{
     content: url("Denim_Pants_Dark_Blue_Back.jpg");
-    opacity: 0.9;
 }
 
 #whiteshirt:hover img{
     content: url("Whiteshirtback.jpg");
-    opacity: 0.9;
 }
 
 #blackshirt:hover img{
     content: url("blackshirtback.jpg");
-    opacity: 0.9;
 }
 
 #redshirt:hover img{
     content: url("redshirtback.jpg");
-    opacity: 0.9;
 }
 
 #yellowshirt:hover img{
     content: url("yellowshirtback.jpg");
-    opacity: 0.9;
 }
 
 #purpleshirt:hover img{
     content: url("Purpleshirtback.jpg");
-    opacity: 0.9;
 }
 
 #blueshirt:hover img{
     content: url("Blueshirtback.jpg");
-    opacity: 0.9;
 }
 
 /*product description*/
@@ -515,7 +511,7 @@ body, html {
     background-color: rgba(35, 56, 191);
     color: aliceblue;
     border: 2px solid;
-    margin: 20px 0;
+    margin: 10px 0;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -526,7 +522,7 @@ body, html {
     color: rgba(35, 56, 191);
 }
 
-.product_container button {
+.product_details button {
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 30px;
@@ -535,16 +531,16 @@ body, html {
     font-size: 20px;
     font-weight: bold;
     border: 3px solid;
-    margin-bottom: 20px;
+    margin: 10px 0 10px;
     width: 100%;
 }
 
-.product_container button:hover {
+.product_details button:hover {
     transition: 0.3s;
     background-color: rgb(54, 77, 225);
 }
 
-.product_container button:active{
+.product_details button:active{
     transition: 0.1s;
     border-color: rgba(35, 56, 191);
 }
@@ -553,12 +549,12 @@ body, html {
     font-family: kemio;
     font-size: 50px;
     text-align: left;
-    margin: 0 0 20px;
 }
 
 .productsize {
-    display: flex;
+    display: grid;
     justify-content: flex-start;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .productsize li {
@@ -575,8 +571,13 @@ body, html {
 }
 
 .productcolour {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.productcolour li {
+    margin-right: 10px;
 }
 
 .productcolour a {
@@ -590,7 +591,7 @@ body, html {
 }
 
 .product_details p {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -606,7 +607,7 @@ body, html {
 
 .container {
     margin: 0;
-    background-color: aliceblue;
+    background-color: white;
     height: 43vh;
 }
 
